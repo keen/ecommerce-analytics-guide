@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+body.visible-events-list {
+    padding-bottom: 220px;
+}
+
+body {
+    padding-top: 80px;
+}
+
+/* Product */
+
+#product-container .product-image {
+    width: 550px;
+
+    margin: 0 auto;
+}
+
+#product-container .product-title {
+    margin-bottom: 15px;
+
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#product-container .product-description {
+    margin-bottom: 15px;
+}
+
+/* Index */
+.products-list .products-row {
+    min-height: 280px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.products-list .products-row:last-child {
+    border-bottom: none;
+}
+
+.products-list .products-row .product-image img {
+    display: block;
+
+    margin: 0 auto 10px;
+
+    width: 200px;
+
+    border: 1px solid #ccc;
+}
+
+.products-list .products-row .product-title {
+    font-size: 1.5em;
+
+    text-align: center;
+}
+
+.products-list .products-row a{
+}
+
+/* Events Stream */
+.events-list {
+    display: none;
+
+    position: fixed;
+    bottom: 0;
+
+    height: 200px;
+    width: 100%;
+}
+
+.events-list .events-title {
+    color: white;
+    background: #00afd7;
+
+    padding: 8px;
+
+    border-top: 1px solid #ccc;
+}
+
+.events-list .events {
+    height: 163px;
+    padding: 8px;
+    margin-bottom: 0;
+
+    overflow: scroll;
+}
+
+.events-list .events code {
+    padding: 0px;
+    margin: 0;
+}
+
+body.visible-events-list .events-list {
+    display: block;
+}
+
+.keen-metric {
+    color: black !important;
+}
+
+.revenue .keen-metric .keen-metric-value:before {
+    content: '$';
+}

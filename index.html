@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keen IO - E-Commerce Shop</title>
+
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="bower_components/cookies-js/dist/cookies.min.js"></script>
+    <script type="text/javascript" src="bower_components/qs/dist/qs.min.js"></script>
+    <script type="text/javascript" src="bower_components/keen-js/dist/keen.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body class="visible-events-list">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Keen IO - E-Commerce Guide Example</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a class="active" href="dashboard.html">Dashboards</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                  <li class=""><a class="" href="https://github.com/nemo/keen-ecommerce-guide">View Guide</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="row-xs-12">
+                <div class="well">
+                    <h1>Welcome to our fake shop!</h1>
+                    <p class="lead">
+                        This is a fake and simple e-commerce website (just plain old HTML/CSS). Below, you can find a few fake products that you can browse, add to your Cart and purchase. You will also see the Keen events that are sent on each page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container products-list">
+        <div class="row products-row">
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="1">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=1" class="btn btn-primary">View Product</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="2">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=2" class="btn btn-primary">View Product</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="3">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=3" class="btn btn-primary">View Product</a>
+            </div>
+        </div>
+
+        <div class="row products-row">
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="4">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=4" class="btn btn-primary">View Product</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="5">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=5" class="btn btn-primary">View Product</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="6">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=6" class="btn btn-primary">View Product</a>
+            </div>
+        </div>
+
+        <div class="row products-row">
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="7">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=7" class="btn btn-primary">View Product</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="8">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=8" class="btn btn-primary">View Product</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4" data-product-id="9">
+                <div class="product-image" data-product-image></div>
+                <div class="product-title" data-product-title></div>
+                <a href="product.html?product-id=9" class="btn btn-primary">View Product</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="events-list">
+        <div class="events-title">
+            Keen Events Sent
+        </div>
+        <pre class="events"><code class="js"></code></pre>
+    </div>
+</body>
+</html>

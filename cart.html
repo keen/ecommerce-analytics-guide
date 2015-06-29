@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keen IO - E-Commerce Shop - Product</title>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="bower_components/cookies-js/dist/cookies.min.js"></script>
+    <script type="text/javascript" src="bower_components/qs/dist/qs.min.js"></script>
+    <script type="text/javascript" src="bower_components/keen-js/dist/keen.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css"></head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Keen IO - E-Commerce Guide Example</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a class="active" href="dashboard.html">Dashboards</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                  <li class=""><a class="" href="https://github.com/nemo/keen-ecommerce-guide">View Guide</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="row-xs-12">
+                <div class="well">
+                    <p class="lead">
+                        This is the checkout process. For simplicity's sake, we've kept it simple to demonstrate how to send a purchase event. You could always specific events for each step in your checkout process to track their performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center">Checkout Process</h1>
+        <div class="row" id="checkout-container">
+            <div class="col-xs-12 col-md-6">
+                <table class="table table-striped   " id="cart">
+                    <thead>
+                        <tr>
+                            <th>Cart Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="text-right"><strong>Grand Total</strong></td>
+                            <td id="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="col-xs-12 col-md-6 purchase-area">
+                <p class="lead">
+                    This is a fake purchase. When you press the buttom below, we'll send a purchase event to Keen.
+                </p>
+
+                <a href="#" class="btn btn-primary btn-lg">Purchase Items</a>
+            </div>
+
+            <div class="col-xs-12 col-md-6 success-area">
+                <p class="lead">
+                    You've made a totally fake purchase! As you can see in the events log below, a purchase event was sent here. Though, it's a good idea to send it on a thank you page for your e-commerce site &mdash; just to make sure it definitely ends up getting sent to Keen.
+                </p>
+
+                <a href="dashboard.html" class="btn btn-primary btn-lg">View Dashboard &amp; Visualizations</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="events-list">
+        <div class="events-title">
+            Keen Events Sent
+        </div>
+        <pre class="events"><code class="js"></code></pre>
+    </div>
+</body>
+</html>

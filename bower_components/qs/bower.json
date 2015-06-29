@@ -1,0 +1,28 @@
+{
+  "name": "qs",
+  "version": "0.3.8",
+  "description": "Simple query string tokens parser",
+  "main": "src/qs.js",
+  "keywords": [
+    "query",
+    "string",
+    "javascript",
+    "web",
+    "parser"
+  ],
+  "authors": [
+    "Nir Elbaz"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nire0510/qs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "karma.conf.js",
+    "Gruntfile.js",
+    "package.json"
+  ]
+}
